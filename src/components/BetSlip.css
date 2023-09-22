@@ -1,0 +1,43 @@
+/* src/components/BetSlip.css */
+
+.bet-slip {
+    margin-left: 20px;
+    width: 40%;
+    float: left;
+  }
+  
+  .bet-slip h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .bet-slip ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .bet {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .bet span {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .bet button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .bet button:hover {
+    background-color: #c82333;
+  }
+  
