@@ -22,6 +22,7 @@ function App() {
     }
   };
 
+  //function to handle remove data on the betsllip
   const handleRemoveBet = (indexToRemove) => {
     setSelectedBets((prevBets) => prevBets.filter((_, index) => index !== indexToRemove));
   };

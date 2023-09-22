@@ -4,7 +4,7 @@ import './BetSlip.css';
 
 function BetSlip({ selectedBets, onRemoveBet }) {
   const handleRemoveBet = (index) => {
-    // Call the onRemoveBet callback with the index of the bet to remove
+    // Callingg the onRemoveBet callback with the index of the bet to remove
     if (typeof onRemoveBet === 'function') {
       onRemoveBet(index);
     }
