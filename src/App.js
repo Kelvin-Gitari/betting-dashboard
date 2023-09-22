@@ -17,12 +17,20 @@ function App() {
       // Remove the existing bet
       setSelectedBets(selectedBets.filter((bet) => bet.game.id !== game.id));
     } else {
+      let odds;
+      if (team === 'draw') {
+        odds = game.oddsDraw;
+      } else if (team === 'teamA') {
+        odds = game.oddsA;
+      } else {
+        odds = game.oddsB;
+      }
       // Add the new bet
-      setSelectedBets([...selectedBets, { game, team, odds: game[`odds${team.charAt(0).toUpperCase()}`] }]);
+      setSelectedBets([...selectedBets, { game, team, odds }]);
     }
   };
 
-  //function to handle remove data on the betsllip
+  // Function to handle removing a bet from the bet slip
   const handleRemoveBet = (indexToRemove) => {
     setSelectedBets((prevBets) => prevBets.filter((_, index) => index !== indexToRemove));
   };

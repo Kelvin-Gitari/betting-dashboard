@@ -40,4 +40,31 @@
   .bet button:hover {
     background-color: #c82333;
   }
+
+  /* src/components/BetSlip.css */
+.bet-slip {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f7f7f7;
+  }
+  
+  .bet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bet button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .total-odds {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
   
